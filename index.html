@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAGA</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h1>BRAGA</h1>
+    </div>
+
+    <div class="menu">
+        <a href="#home">INICIO</a>
+        <a href="#moda-feminina">MODA FEMININA</a>
+        <a href="#moda-masculina">MODA MASCULINA </a>
+        <a href="#moda-kids">MODA KIDS</a>
+    </div>
+
+    <div class="actions">
+        <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-btn"><i class="fa-solid fa-user"></i></button>
+    </div>
+
+</nav>
+
+<section id="home">
+    <div class="slider">
+        <img src="slide1f.png" class="slide active">
+        <img src="slide2m.png" class="slide">
+        <img src="slide3k.png" class="slide">
+    </div>
+
+    <a href="#comprar" class="btn-buy">COMPRAR AGORA</a>
+</section>
+
+<section id="moda-feminina"></section>
+<section id="moda-masculina"></section>
+<section id="moda-kids"></section>
+<section id="contato">
+
+    <div class="gallery">
+        <div class="content">
+            <img src="jaqueta.png">
+            <h3>JAQUETA MASCULINA</h3>
+            <p>Jaqueta Kid</p>
+            <h6>$99,90</h6>
+            <ul>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star"></i></li>
+            </ul>
+                        <button class="buy-1">Buy Now</button>
+        </div>
+
+                <div class="content">
+            <img src="modakids.png">
+            <h3>KIT KIDS</h3>
+            <p>Kits completos roupas kids masculino e feminina</p>
+            <h6>A PARTIR DE $149,99</h6>
+            <ul>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star"></i></li>
+            </ul>
+            <button class="buy-2">Buy Now</button>
+        </div>
+
+                <div class="content">
+            <img src="conjunto.png">
+            <h3>PROMO VERÃO</h3>
+            <p>Promoções roupas para crianças - Estilo verão</p>
+            <h6>QUALQUER POR $150</h6>
+            <ul>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+                <li><i lclass="fa fa-star checked"></i></li>
+            </ul>
+                        <button class="buy-3">Buy Now</button>
+        </div>
+
+
+    </div>
+
+
+    <div class="final">
+        <p>AGRADEÇO PELA VISITA E ATENÇÃO!</p>
+    </div>
+
+    <div class="links_contato">
+        <i class="fa-brands fa-instagram" type="button"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+
+
+</section>
+
+
+
+
+<footer>
+    <p>@2026 BragaShop - Todos direitos reservados</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 4000);
+</script>
+
+
+
+
+</body>
+</html>
